@@ -3,25 +3,22 @@
  */
 module cashew.cashew_version;
 
+private import std.conv: to;
+
+
 /**
  *
  */
-struct CashewVersion {
-    import std.conv: to;
+enum size_t cashewMajorVersion = 0u;
 
-    /**
-     *
-     */
-    static enum size_t major = 0u;
 
-    /**
-     *
-     */
-    static enum size_t minor = 1u;
+/**
+ *
+ */
+enum size_t cashewMinorVersion = 1u;
 
-    /**
-     *
-     */
-    static enum string versionString = major.to!string ~ `.` ~ minor.to!string;
 
-} // end cashewVersion
+/**
+ *
+ */
+enum string cashewVersion = cashewMajorVersion.to!string ~ `.` ~ cashewMinorVersion.to!string;
