@@ -1,0 +1,8 @@
+name "cashew"
+description "A simple nutty D library."
+authors "Christopher Nicholson-Sauls"
+license "MIT"
+targetType "library"
+
+buildRequirements "disallowDeprecations"
+dflags "-preview=shortenedMethods"

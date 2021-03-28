@@ -1,9 +1,0 @@
-{
-	"authors": [
-		"Christopher Nicholson-Sauls"
-	],
-	"copyright": "Copyright 2021, Christopher Nicholson-Sauls",
-	"description": "A simple nutty D library.",
-	"license": "MIT",
-	"name": "cashew"
-}

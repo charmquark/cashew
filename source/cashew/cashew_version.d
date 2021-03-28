@@ -22,3 +22,4 @@ enum size_t cashewMinorVersion = 1u;
  *
  */
 enum string cashewVersion = cashewMajorVersion.to!string ~ `.` ~ cashewMinorVersion.to!string;
+
