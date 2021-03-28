@@ -195,9 +195,15 @@ unittest { // confirm forward range saving
     src.copy(list1);
 
     auto list2 = list1.save;
+    auto n1 = list1._head;
+    auto n2 = list2._head;
+    while (n1 && n2) {
+        assert(n1 != n2);
+        n1 = n1.next;
+        n2 = n2.next;
+    }
+
     assert(list2.equal(src.retro));
     assert(list2.length == 0);
-
-    assert(list1.length == 4);
     assert(list1.equal(src.retro));
 }
